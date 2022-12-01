@@ -1,6 +1,11 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+/* 기본 스타일 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* 본문 스타일 */
 body {
   background: #ffc;
@@ -34,6 +39,32 @@ body {
 .main {
   background: lightgreen;
   height: 50vh;
+  display: flow-root;
+  /* overflow: hidden; 대신 flow-root사용하기 */
+  padding: 0 15px;
+}
+
+.group {
+  /* group1, 2, 3 한 번에 적용시키기 */
+  margin: 0 15px;
+}
+
+.group1 {
+  background: violet;
+  width: 250px;
+  float: left;
+}
+
+.group2 {
+  background: salmon;
+  width: 380px;
+  float: left;
+}
+
+.group3 {
+  background: gold;
+  width: 190px;
+  float: left;
 }
 
 /* 슬로건 */
