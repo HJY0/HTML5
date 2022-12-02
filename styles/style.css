@@ -35,22 +35,15 @@ body {
   height: 10vh;
 }
 
-/* display: flow-root; */
-  /* overflow: hidden; 대신 flow-root사용하기 */
-  /* padding: 0 15px; */
-
 /* 메인 */
 .main {
   background: lightgreen;
-  height: 50vh;
+  min-height: 450px;
   display: flex;
-  flex-direction: row;
-}
-
-.group {
-  /* group1, 2, 3 한 번에 적용시키기 */
-  /* margin: 0 15px; */
-  /* float: left; */
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
 }
 
 .group1 {
@@ -66,7 +59,6 @@ body {
 .group3 {
   background: gold;
   width: 190px;
-  order: -1;
 }
 
 /* 슬로건 */
